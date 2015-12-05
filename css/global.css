@@ -1,0 +1,495 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700|Open+Sans:400,700|Roboto:400,700);
+/* line 5, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 36, ../scss/_bits.scss */
+.container:after, .sitewrapper:after, header:after, #news:after, #games:after, #studio:after, #shop:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 5, ../scss/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #555555;
+  margin: 0 0 5px 0;
+  padding: 0;
+}
+
+/* line 10, ../scss/_typography.scss */
+h1, .h1 {
+  font-size: 42px;
+  font-weight: normal;
+}
+
+/* line 15, ../scss/_typography.scss */
+h2, .h2 {
+  font-size: 36px;
+}
+
+/* line 19, ../scss/_typography.scss */
+h3, .h3 {
+  font-size: 30px;
+  margin: 15px 0 0 0;
+}
+
+/* line 24, ../scss/_typography.scss */
+h4, .h4 {
+  font-size: 24px;
+}
+
+/* line 28, ../scss/_typography.scss */
+h5, .h5 {
+  font-size: 18px;
+}
+
+/* line 32, ../scss/_typography.scss */
+h6, .h6 {
+  font-size: 12px;
+}
+
+/* line 36, ../scss/_typography.scss */
+a {
+  color: white;
+}
+
+/* line 40, ../scss/_typography.scss */
+a:link {
+  text-decoration: none;
+}
+
+/* line 44, ../scss/_typography.scss */
+a:visited {
+  text-decoration: none;
+}
+
+/* line 48, ../scss/_typography.scss */
+a:hover {
+  color: #171222;
+  text-decoration: none;
+}
+
+/* line 53, ../scss/_typography.scss */
+a:active {
+  text-decoration: none;
+}
+
+/* line 57, ../scss/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 65, ../scss/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+  color: black;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 75, ../scss/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 83, ../scss/_typography.scss */
+mark {
+  background: #ff0;
+  color: black;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 92, ../scss/_typography.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1rem;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 104, ../scss/_typography.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 114, ../scss/_typography.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 122, ../scss/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 130, ../scss/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 138, ../scss/_typography.scss */
+sup {
+  top: -0.5rem;
+}
+
+/* line 142, ../scss/_typography.scss */
+sub {
+  bottom: -0.25rem;
+}
+
+/* line 146, ../scss/_typography.scss */
+figcaption {
+  padding: 5px 10px;
+  margin: 0 0 4px 0;
+}
+
+/* line 151, ../scss/_typography.scss */
+time {
+  font-weight: bold;
+}
+
+/* line 13, ../scss/global.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 19, ../scss/global.scss */
+.container {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* line 24, ../scss/global.scss */
+.fullWidth {
+  width: 100%;
+}
+
+/* line 32, ../scss/global.scss */
+header {
+  background: #101010;
+}
+
+/* line 38, ../scss/global.scss */
+.logo {
+  padding: 10px;
+  width: 6.77966%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 44, ../scss/global.scss */
+.topnav ul {
+  width: 91.52542%;
+  float: right;
+  margin-right: 0;
+}
+/* line 46, ../scss/global.scss */
+.topnav ul li {
+  margin-left: 10px;
+  float: left;
+  line-height: 4em;
+}
+/* line 50, ../scss/global.scss */
+.topnav ul li a {
+  color: white;
+}
+
+/* line 58, ../scss/global.scss */
+.sectionTitle h2 {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 0px #000;
+}
+
+/* line 65, ../scss/global.scss */
+#news {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: #433565;
+}
+/* line 69, ../scss/global.scss */
+#news .container {
+  padding: 10px 0 0 0;
+}
+/* line 70, ../scss/global.scss */
+#news a {
+  text-shadow: 1px 1px 0px #000;
+}
+/* line 73, ../scss/global.scss */
+#news .posthero {
+  background: #433565 url(../images/news/thumbsup.jpg);
+  height: 450px;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+/* line 79, ../scss/global.scss */
+#news .posthero h2 {
+  position: absolute;
+  bottom: 1em;
+}
+/* line 84, ../scss/global.scss */
+#news .post {
+  border: 2px solid white;
+  position: relative;
+  margin-bottom: 10px;
+  background: url(../images/news/thumbsup.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 225px;
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 93, ../scss/global.scss */
+#news .post:nth-child(2n+0) {
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+}
+/* line 96, ../scss/global.scss */
+#news .post .newsTitle {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+}
+
+/* line 104, ../scss/global.scss */
+#games {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 107, ../scss/global.scss */
+#games .sectionTitle {
+  background: url(../images/sections/shop.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  height: 450px;
+  line-height: 450px;
+}
+
+/* line 116, ../scss/global.scss */
+.game {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: url(../images/news/thumbsup.jpg);
+  background-size: cover;
+}
+
+/* line 124, ../scss/global.scss */
+.gameTitle {
+  background: #433565;
+  display: inline-block;
+  position: absolute;
+  bottom: 1em;
+  padding: 20px;
+}
+
+/* line 133, ../scss/global.scss */
+#studio {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: url(../images/sections/studio.jpeg);
+  background-size: cover;
+  position: relative;
+}
+/* line 139, ../scss/global.scss */
+#studio .container {
+  padding: 100px 0 300px 0;
+}
+/* line 142, ../scss/global.scss */
+#studio .sectionTitle {
+  height: 450px;
+  line-height: 450px;
+}
+
+/* line 147, ../scss/global.scss */
+.studioOverlay {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 82%, #ffffff 98%);
+}
+
+/* line 151, ../scss/global.scss */
+#shop {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  background: #433565;
+}
+/* line 155, ../scss/global.scss */
+#shop .container {
+  padding: 100px 0;
+}
+/* line 158, ../scss/global.scss */
+#shop .sectionTitle {
+  background: url(../images/sections/shop.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  height: 450px;
+  line-height: 450px;
+}
+
+/* line 168, ../scss/global.scss */
+.colorPicker {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: blue;
+  margin-left: 2px;
+}
+
+/* line 176, ../scss/global.scss */
+.sizePicker {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* line 181, ../scss/global.scss */
+.product {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  border: 2px solid #2d2344;
+}
+/* line 187, ../scss/global.scss */
+.product:nth-child(2n+0) {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+}
+/* line 190, ../scss/global.scss */
+.product img {
+  max-width: 50%;
+}
+
+/* line 195, ../scss/global.scss */
+.productInfo {
+  float: left;
+  width: 50%;
+}
+
+/* line 200, ../scss/global.scss */
+.shopMore {
+  display: block;
+  background: #35654b;
+  padding: 20px;
+  border: none;
+  color: white;
+}

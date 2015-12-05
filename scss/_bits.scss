@@ -1,0 +1,68 @@
+$purple : #433565;
+$gray: #555;
+$darkGray: #101010;
+$twitter: #4099FF;
+$green: adjust-hue($purple, 250%);
+
+$padding: 10px;
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 12,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin font-stack-head {
+	font-family: 'News Cycle', sans-serif;
+	font-weight: 400;
+}
+
+@mixin font-stack-body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+@mixin breakpoint($point) {
+	@if $point == large {
+		@media(max-width: 1500px) {@content;}
+	}
+	@if $point == medium {
+		@media(max-width: 1280px) {@content;}
+	}
+	@if $point == small {
+		@media(max-width: 1000px) {@content;} 
+	}
+	@if $point == tiny {
+		@media(max-width: 640px) {@content;}
+	}
+	@if $point == mobile {
+		@media(max-width: 380px) {@content;}
+	}
+}
