@@ -1,0 +1,24 @@
+header {
+	background: $darkGray;
+	@extend %clearfix;
+	//@include bleed-x(1000em 1000em);
+}
+
+.logo {
+	padding: $padding;
+	@include span(1);
+}
+
+.topnav {
+	& ul {
+		@include span(11 at 2);
+		& li {
+			margin-left: $padding;
+			float: left;
+			line-height: 4em;
+			& a {
+				color: white;
+			}
+		}
+	}
+}

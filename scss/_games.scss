@@ -1,0 +1,43 @@
+#games {
+	@extend %clearfix;
+	@include span(12);
+	& .sectionTitle {
+		background: url(../images/sections/games.jpeg);
+		background-size: cover;
+		background-position: bottom;
+		height: 100px;
+		line-height: 100px;
+	}
+}
+
+.game {
+	position: relative;
+	height: 400px;
+	@include span(12);
+	background: url(../images/games/fallout.jpg);
+	background-size: cover;
+	border-bottom: 10px solid black;
+	&:nth-child(3) {
+		background: url(../images/games/pacman.jpg);
+		background-size: cover;
+	}
+	&:nth-child(4) {
+		background: url(../images/games/rawr.jpg);
+		background-size: cover;
+	}
+}
+
+.gameOverlay {
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0, .9) 100%);
+	height: 100%;
+}
+
+.gameTitle {
+	background: $purple;
+	display: inline-block;
+	position: absolute;
+	bottom: 1em;
+	padding: 20px 20px 20px 50px;
+	border-bottom: solid 5px darken($purple, 10%);
+	;
+}

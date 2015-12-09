@@ -1,0 +1,71 @@
+#news {
+	@extend %clearfix;
+	@include span(12);
+	//background: $purple;
+	& .container{
+		max-width: 100% !important;
+	}
+	& a {
+		text-shadow: 1px 1px 0px #000;
+	}
+	& .posthero{
+		background: $purple;
+		height: 450px;
+		background-size:cover;
+		background-position: bottom;
+		position: relative;
+		overflow: hidden;
+		& h2 {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+		& img {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+		}
+	}
+
+.read {
+	padding: 20px;
+	border: 3px solid $purple;
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translateX(-50%);
+	color: white;
+}
+
+	& .post {
+		position: relative;
+		background: url(../images/news/thumbsup.jpg);
+		background-size: cover;
+		background-position: bottom;
+		height: 225px;
+		overflow: hidden;
+		@include span(4);
+
+		&:nth-child(2n+0) {
+			@include span(4 at 5);
+		}
+		&:nth-child(3n+0) {
+			@include span(4 at 9);
+		}
+
+		& img {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 100%;
+		}
+
+		& .newsTitle {
+			position: absolute;
+			bottom: 1em;
+			left: 1em;
+		}
+	}
+}

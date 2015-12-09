@@ -1,8 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700|Open+Sans:400,700|Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Rubik+One|Alegreya+Sans+SC:400,800|Rubik:400,700|Open+Sans:400,700);
 
 $fontsize: 12px;
+$font: 'Rubik';
+$headingfont: 'Rubik One';
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: $headingfont;
     color: #555555;
     margin: 0 0 5px 0;
     padding: 0;
@@ -46,7 +49,7 @@ a:visited {
 }
 
 a:hover {
-    color: darken($purple, 20%); 
+    color: darken(white, 30%); 
     text-decoration: none;
 }
 

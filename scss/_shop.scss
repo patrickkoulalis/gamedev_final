@@ -1,0 +1,67 @@
+#shop {
+	@extend %clearfix;
+	@include span(12);
+	//background: $purple;
+	padding: 0 0 $padding 0;
+	& .container {
+		padding: $padding 0 $padding 0;
+	}
+	& .sectionTitle {
+		background: url(../images/sections/shop.jpeg);
+		background-size: cover;
+		background-position: bottom;
+		height: 100px;
+		line-height: 100px;
+	}
+}
+
+.colorSelect, .sizeSelect {
+	padding: $padding 0 0 0;
+}
+
+
+.colorPicker {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: blue;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+.sizePicker {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.product {
+	@include span(6);
+	background: white;
+	padding: 20px;
+	margin-top: 20px;
+	border: 2px solid #F9F9F9;
+	&:nth-child(2n+0) {
+		@include span(6 at 7);
+	}
+	& img {
+		max-width: 50%;
+	}
+}
+
+.productInfo {
+	float: left;
+	width: 50%
+}
+
+.shopMore {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	background: $purple10;
+	padding: 20px;
+	border: none;
+	color: white;
+	&:hover {
+		border: 2px solid $green;
+	}
+}

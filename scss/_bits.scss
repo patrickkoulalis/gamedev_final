@@ -1,8 +1,9 @@
-$purple : #433565;
+$purple : rgb(34, 27, 58);
 $gray: #555;
 $darkGray: #101010;
 $twitter: #4099FF;
 $green: adjust-hue($purple, 250%);
+$purple10: adjust-hue($purple, 20%);
 
 $padding: 10px;
 $susy: (
@@ -13,7 +14,7 @@ $susy: (
   container: auto,
   container-position: center,
   columns: 12,
-  gutters: .25,
+  gutters: .10,
   column-width: false,
   global-box-sizing: content-box,
   last-flow: to,
@@ -33,11 +34,7 @@ $susy: (
 );
 
 %clearfix {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  clear: both;
 }
 
 @mixin font-stack-head {

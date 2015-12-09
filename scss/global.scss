@@ -16,9 +16,17 @@
   			box-sizing: border-box;
 }
 
+body {
+	font-family: $font;
+}
+
+button {
+	cursor: pointer;
+}
+
 .container {
 	@extend %clearfix;
-	@include container(60%);
+	@include container(90%);
 }
 
 .fullWidth {
@@ -29,32 +37,10 @@
 	@extend %clearfix;
 }
 
-header {
-	background: $darkGray;
-	@extend %clearfix;
-	//@include bleed-x(1000em 1000em);
-}
-
-.logo {
-	padding: $padding;
-	@include span(1);
-}
-
-.topnav {
-	& ul {
-		@include span(11 at 2);
-		& li {
-			margin-left: $padding;
-			float: left;
-			line-height: 4em;
-			& a {
-				color: white;
-			}
-		}
-	}
-}
+@import "header";
 
 .sectionTitle {
+	border-bottom: solid 5px darken($purple, 10%);
 	& h2 {
 		color: white;
 		text-align: center;
@@ -62,145 +48,21 @@ header {
 	}
 }
 
-#news {
+.sectionOverlay {
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(67,53,101, .9) 80%);
+	height: 100%;
+}
+
+@import "news";
+
+@import "games";
+
+@import "studio";
+
+@import "shop";
+
+footer {
 	@extend %clearfix;
-	@include span(12);
-	background: $purple;
-	& .container{padding: $padding 0 0 0;}
-	& a {
-		text-shadow: 1px 1px 0px #000;
-	}
-	& .posthero{
-		background: $purple url(../images/news/thumbsup.jpg);
-		height: 450px;
-		background-size:cover;
-		background-position: bottom;
-		position: relative;
-		& h2 {
-			position: absolute;
-			bottom: 1em;
-		}
-	}
-	& .post {
-		border: 2px solid white;
-		position: relative;
-		margin-bottom: $padding;
-		background: url(../images/news/thumbsup.jpg);
-		background-size: cover;
-		background-position: bottom;
-		height: 225px;
-		@include span(4);
-		&:nth-child(2n+0) {
-			@include span(8 at 5);
-		}
-		& .newsTitle {
-			position: absolute;
-			bottom: 1em;
-			left: 1em;
-		}
-	}
-}
-
-#games {
-	@extend %clearfix;
-	@include span(12);
-	& .sectionTitle {
-		background: url(../images/sections/shop.jpeg);
-		background-size: cover;
-		background-position: bottom;
-		height: 450px;
-		line-height: 450px;
-	}
-}
-
-.game {
-	position: relative;
-	height: 400px;
-	@include span(12);
-	background: url(../images/news/thumbsup.jpg);
-	background-size: cover;
-}
-
-.gameTitle {
-	background: $purple;
-	display: inline-block;
-	position: absolute;
-	bottom: 1em;
-	padding: 20px;
-	;
-}
-
-#studio {
-	@extend %clearfix;
-	@include span(12);
-	background: url(../images/sections/studio.jpeg);
-	background-size: cover;
-	position: relative;
-	& .container {
-		padding: 100px 0 300px 0;
-	}
-	& .sectionTitle {
-		height: 450px;
-		line-height: 450px;
-	}
-}
-.studioOverlay {
-	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 82%,rgba(255,255,255,1) 98%);
-}
-
-#shop {
-	@extend %clearfix;
-	@include span(12);
-	background: $purple;
-	& .container {
-		padding: 100px 0;
-	}
-	& .sectionTitle {
-		background: url(../images/sections/shop.jpeg);
-		background-size: cover;
-		background-position: bottom;
-		height: 450px;
-		line-height: 450px;
-	}
-}
-
-
-.colorPicker {
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background: blue;
-	margin-left: 2px;
-}
-
-.sizePicker {
-	display: inline-block;
-	margin-left: 10px;
-}
-
-.product {
-	@include span(6);
-	background: white;
-	padding: 20px;
-	margin-top: 20px;
-	border: 2px solid darken($purple, 10%);
-	&:nth-child(2n+0) {
-		@include span(6 at 7);
-	}
-	& img {
-		max-width: 50%;
-	}
-}
-
-.productInfo {
-	float: left;
-	width: 50%
-}
-
-.shopMore {
-	display: block;
-	background: $green;
-	padding: 20px;
-	border: none;
-	color: white;
+	background: $darkGray;
+	padding: 50px;
 }
