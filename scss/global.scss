@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "normalize";
 @import "compass/css3";
 @import "susy";
 
@@ -26,10 +26,9 @@ button {
 
 .container {
 	@extend %clearfix;
-	@include container(90%);
 }
 
-.fullWidth {
+.full-width {
 	width: 100%;
 }
 
@@ -65,4 +64,6 @@ footer {
 	@extend %clearfix;
 	background: $darkGray;
 	padding: 50px;
+	text-align: center;
+	color: white;
 }

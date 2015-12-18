@@ -2,70 +2,263 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
 @import url(https://fonts.googleapis.com/css?family=Rubik+One|Alegreya+Sans+SC:400,800|Rubik:400,700|Open+Sans:400,700);
-/* line 5, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+/* line 11, ../scss/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
 }
 
-/* line 22, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 29, ../scss/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 40, ../scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 49, ../scss/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 63, ../scss/_normalize.scss */
 html {
-  line-height: 1;
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
 }
 
-/* line 24, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
+/*
+ * Removes default margin.
+ */
+/* line 73, ../scss/_normalize.scss */
+body {
+  margin: 0;
 }
 
-/* line 26, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 85, ../scss/_normalize.scss */
+img {
+  border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 93, ../scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 105, ../scss/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 117, ../scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 128, ../scss/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 139, ../scss/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 153, ../scss/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 166, ../scss/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 178, ../scss/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 188, ../scss/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 200, ../scss/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 212, ../scss/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 221, ../scss/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 232, ../scss/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 245, ../scss/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-/* line 28, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 116, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
 }
 
 /* line 36, ../scss/_bits.scss */
@@ -75,7 +268,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 7, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Rubik One";
+  font-family: "Alegreya Sans SC";
   color: #555555;
   margin: 0 0 5px 0;
   padding: 0;
@@ -115,7 +308,7 @@ h6, .h6 {
 
 /* line 39, ../scss/_typography.scss */
 a {
-  color: white;
+  color: #221b3a;
 }
 
 /* line 43, ../scss/_typography.scss */
@@ -128,18 +321,12 @@ a:visited {
   text-decoration: none;
 }
 
-/* line 51, ../scss/_typography.scss */
-a:hover {
-  color: #b3b3b3;
-  text-decoration: none;
-}
-
-/* line 56, ../scss/_typography.scss */
+/* line 55, ../scss/_typography.scss */
 a:active {
   text-decoration: none;
 }
 
-/* line 60, ../scss/_typography.scss */
+/* line 59, ../scss/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -147,7 +334,7 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 68, ../scss/_typography.scss */
+/* line 67, ../scss/_typography.scss */
 b,
 strong {
   font-weight: bold;
@@ -157,7 +344,7 @@ strong {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 78, ../scss/_typography.scss */
+/* line 77, ../scss/_typography.scss */
 dfn {
   font-style: italic;
 }
@@ -165,7 +352,7 @@ dfn {
 /*
  * Addresses styling not present in IE 8/9.
  */
-/* line 86, ../scss/_typography.scss */
+/* line 85, ../scss/_typography.scss */
 mark {
   background: #ff0;
   color: black;
@@ -174,7 +361,7 @@ mark {
 /*
  * Corrects font family set oddly in Safari 5 and Chrome.
  */
-/* line 95, ../scss/_typography.scss */
+/* line 94, ../scss/_typography.scss */
 code,
 kbd,
 pre,
@@ -186,17 +373,22 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 107, ../scss/_typography.scss */
+/* line 106, ../scss/_typography.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
+/* line 112, ../scss/_typography.scss */
+p {
+  margin: 0 0 1rem 0;
+}
+
 /*
  * Sets consistent quote types.
  */
-/* line 117, ../scss/_typography.scss */
+/* line 120, ../scss/_typography.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -204,7 +396,7 @@ q {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 125, ../scss/_typography.scss */
+/* line 128, ../scss/_typography.scss */
 small {
   font-size: 80%;
 }
@@ -212,7 +404,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 133, ../scss/_typography.scss */
+/* line 136, ../scss/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -221,23 +413,23 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 141, ../scss/_typography.scss */
+/* line 144, ../scss/_typography.scss */
 sup {
   top: -0.5rem;
 }
 
-/* line 145, ../scss/_typography.scss */
+/* line 148, ../scss/_typography.scss */
 sub {
   bottom: -0.25rem;
 }
 
-/* line 149, ../scss/_typography.scss */
+/* line 152, ../scss/_typography.scss */
 figcaption {
-  padding: 5px 10px;
+  padding: 5px 20px;
   margin: 0 0 4px 0;
 }
 
-/* line 154, ../scss/_typography.scss */
+/* line 157, ../scss/_typography.scss */
 time {
   font-weight: bold;
 }
@@ -251,7 +443,7 @@ time {
 
 /* line 19, ../scss/global.scss */
 body {
-  font-family: "Rubik";
+  font-family: "Open Sans";
 }
 
 /* line 23, ../scss/global.scss */
@@ -259,21 +451,8 @@ button {
   cursor: pointer;
 }
 
-/* line 27, ../scss/global.scss */
-.container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
-.container:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/* line 32, ../scss/global.scss */
-.fullWidth {
+/* line 31, ../scss/global.scss */
+.full-width {
   width: 100%;
 }
 
@@ -281,44 +460,57 @@ button {
 header {
   background: #101010;
 }
+/* line 5, ../scss/_header.scss */
+header .container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+header .container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
 
-/* line 7, ../scss/_header.scss */
+/* line 10, ../scss/_header.scss */
 .logo {
-  padding: 10px;
+  padding: 20px;
   width: 7.63359%;
   float: left;
   margin-right: 0.76336%;
 }
 
-/* line 13, ../scss/_header.scss */
+/* line 16, ../scss/_header.scss */
 .topnav ul {
   width: 91.60305%;
   float: right;
   margin-right: 0;
 }
-/* line 15, ../scss/_header.scss */
+/* line 18, ../scss/_header.scss */
 .topnav ul li {
-  margin-left: 10px;
+  margin: 0 0 0 20px;
   float: left;
   line-height: 4em;
+  list-style: none;
 }
-/* line 19, ../scss/_header.scss */
+/* line 23, ../scss/_header.scss */
 .topnav ul li a {
   color: white;
 }
 
-/* line 42, ../scss/global.scss */
+/* line 41, ../scss/global.scss */
 .sectionTitle {
   border-bottom: solid 5px #0e0b17;
 }
-/* line 44, ../scss/global.scss */
+/* line 43, ../scss/global.scss */
 .sectionTitle h2 {
   color: white;
   text-align: center;
   text-shadow: 1px 1px 0px #000;
 }
 
-/* line 51, ../scss/global.scss */
+/* line 50, ../scss/global.scss */
 .sectionOverlay {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(67, 53, 101, 0.9) 80%);
   height: 100%;
@@ -331,83 +523,159 @@ header {
   margin-left: 0;
   margin-right: 0;
 }
-/* line 5, ../scss/_news.scss */
+/* line 6, ../scss/_news.scss */
 #news .container {
-  max-width: 100% !important;
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 8, ../scss/_news.scss */
-#news a {
-  text-shadow: 1px 1px 0px #000;
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#news .container:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
-/* line 11, ../scss/_news.scss */
-#news .posthero {
+/* line 10, ../scss/_news.scss */
+#news .news-hero {
   background: #221b3a;
   height: 450px;
-  background-size: cover;
-  background-position: bottom;
   position: relative;
   overflow: hidden;
 }
-/* line 18, ../scss/_news.scss */
-#news .posthero h2 {
+/* line 15, ../scss/_news.scss */
+#news .news-hero h2 {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
+  text-shadow: 1px 1px 0px #000;
 }
-/* line 24, ../scss/_news.scss */
-#news .posthero img {
+/* line 22, ../scss/_news.scss */
+#news .news-hero img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
 }
-/* line 32, ../scss/_news.scss */
-#news .read {
-  padding: 20px;
-  border: 3px solid #221b3a;
-  position: absolute;
-  left: 50%;
-  top: 55%;
-  transform: translateX(-50%);
-  color: white;
-}
-/* line 42, ../scss/_news.scss */
-#news .post {
+/* line 30, ../scss/_news.scss */
+#news .news-post-preview {
   position: relative;
-  background: url(../images/news/thumbsup.jpg);
-  background-size: cover;
-  background-position: bottom;
   height: 225px;
   overflow: hidden;
-  width: 32.82443%;
+  width: 49.61832%;
   float: left;
   margin-right: 0.76336%;
 }
-/* line 51, ../scss/_news.scss */
-#news .post:nth-child(2n+0) {
-  width: 32.82443%;
-  float: left;
-  margin-right: 0.76336%;
-}
-/* line 54, ../scss/_news.scss */
-#news .post:nth-child(3n+0) {
-  width: 32.82443%;
+/* line 35, ../scss/_news.scss */
+#news .news-post-preview:nth-child(2n+0) {
+  width: 49.61832%;
   float: right;
   margin-right: 0;
 }
-/* line 58, ../scss/_news.scss */
-#news .post img {
+/* line 38, ../scss/_news.scss */
+#news .news-post-preview img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
 }
-/* line 65, ../scss/_news.scss */
-#news .post .newsTitle {
+/* line 44, ../scss/_news.scss */
+#news .news-post-preview .news-post-title {
   position: absolute;
   bottom: 1em;
   left: 1em;
+  font-size: 1.5rem;
+}
+@media (max-width: 800px) {
+  /* line 54, ../scss/_news.scss */
+  #news .container {
+    padding: 10px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  #news .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 59, ../scss/_news.scss */
+  #news .news-post-preview {
+    height: 125px;
+    margin-bottom: 1%;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 63, ../scss/_news.scss */
+  #news .news-post-preview:nth-child(2n+0) {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 66, ../scss/_news.scss */
+  #news .news-post-preview:nth-child(3n+0) {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 69, ../scss/_news.scss */
+  #news .news-post-preview .news-post-title {
+    font-size: 1rem;
+  }
+  /* line 74, ../scss/_news.scss */
+  #news .news-hero {
+    background: #221b3a;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 79, ../scss/_news.scss */
+  #news .news-hero h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-shadow: 1px 1px 0px #000;
+  }
+  /* line 86, ../scss/_news.scss */
+  #news .news-hero img {
+    height: inherit;
+  }
+}
+
+/* line 92, ../scss/_news.scss */
+.news-post-full {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0;
+}
+/* line 95, ../scss/_news.scss */
+.news-post-full img {
+  display: none;
+}
+/* line 98, ../scss/_news.scss */
+.news-post-full .news-post-title {
+  font-size: 3rem;
+  color: #221b3a;
+}
+
+/* line 105, ../scss/_news.scss */
+.news-post-title a {
+  background: #0e0b17;
+  color: white;
+  padding: 5px;
+}
+/* line 109, ../scss/_news.scss */
+.news-post-title a:hover {
+  background: #362b5d;
+  text-decoration: none;
 }
 
 /* line 1, ../scss/_games.scss */
@@ -437,25 +705,26 @@ header {
   background: url(../images/games/fallout.jpg);
   background-size: cover;
   border-bottom: 10px solid black;
+  background-position-y: 60%;
 }
-/* line 20, ../scss/_games.scss */
+/* line 21, ../scss/_games.scss */
 .game:nth-child(3) {
   background: url(../images/games/pacman.jpg);
   background-size: cover;
 }
-/* line 24, ../scss/_games.scss */
+/* line 25, ../scss/_games.scss */
 .game:nth-child(4) {
   background: url(../images/games/rawr.jpg);
   background-size: cover;
 }
 
-/* line 30, ../scss/_games.scss */
+/* line 31, ../scss/_games.scss */
 .gameOverlay {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   height: 100%;
 }
 
-/* line 35, ../scss/_games.scss */
+/* line 36, ../scss/_games.scss */
 .gameTitle {
   background: #221b3a;
   display: inline-block;
@@ -463,6 +732,14 @@ header {
   bottom: 1em;
   padding: 20px 20px 20px 50px;
   border-bottom: solid 5px #0e0b17;
+}
+/* line 43, ../scss/_games.scss */
+.gameTitle a {
+  color: white;
+}
+/* line 45, ../scss/_games.scss */
+.gameTitle a:hover {
+  color: #0e0b17;
 }
 
 /* line 1, ../scss/_studio.scss */
@@ -478,15 +755,24 @@ header {
 /* line 7, ../scss/_studio.scss */
 #studio .container {
   padding: 100px 0 300px 0;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 10, ../scss/_studio.scss */
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#studio .container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 11, ../scss/_studio.scss */
 #studio .sectionTitle {
   height: 100px;
   line-height: 100px;
   border: none;
 }
 
-/* line 16, ../scss/_studio.scss */
+/* line 17, ../scss/_studio.scss */
 .studioOverlay {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 82%);
 }
@@ -497,13 +783,22 @@ header {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  padding: 0 0 10px 0;
+  padding: 0 0 20px 0;
 }
 /* line 6, ../scss/_shop.scss */
 #shop .container {
-  padding: 10px 0 10px 0;
+  padding: 20px 0 20px 0;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 9, ../scss/_shop.scss */
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+#shop .container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 10, ../scss/_shop.scss */
 #shop .sectionTitle {
   background: url(../images/sections/shop.jpeg);
   background-size: cover;
@@ -511,13 +806,28 @@ header {
   height: 100px;
   line-height: 100px;
 }
-
-/* line 18, ../scss/_shop.scss */
-.colorSelect, .sizeSelect {
-  padding: 10px 0 0 0;
+@media (max-width: 800px) {
+  /* line 19, ../scss/_shop.scss */
+  #shop .container {
+    padding: 20px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  #shop .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
 }
 
-/* line 23, ../scss/_shop.scss */
+/* line 26, ../scss/_shop.scss */
+.colorSelect, .sizeSelect {
+  padding: 20px 0 0 0;
+}
+
+/* line 31, ../scss/_shop.scss */
 .colorPicker {
   display: inline-block;
   width: 15px;
@@ -527,13 +837,13 @@ header {
   cursor: pointer;
 }
 
-/* line 32, ../scss/_shop.scss */
+/* line 40, ../scss/_shop.scss */
 .sizePicker {
   display: inline-block;
   margin-left: 10px;
 }
 
-/* line 37, ../scss/_shop.scss */
+/* line 45, ../scss/_shop.scss */
 .product {
   width: 49.61832%;
   float: left;
@@ -543,24 +853,40 @@ header {
   margin-top: 20px;
   border: 2px solid #F9F9F9;
 }
-/* line 43, ../scss/_shop.scss */
+/* line 52, ../scss/_shop.scss */
 .product:nth-child(2n+0) {
   width: 49.61832%;
   float: right;
   margin-right: 0;
 }
-/* line 46, ../scss/_shop.scss */
+/* line 56, ../scss/_shop.scss */
 .product img {
   max-width: 50%;
 }
+@media (max-width: 800px) {
+  /* line 45, ../scss/_shop.scss */
+  .product {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 63, ../scss/_shop.scss */
+  .product:nth-child(2n+0) {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
-/* line 51, ../scss/_shop.scss */
+/* line 70, ../scss/_shop.scss */
 .productInfo {
   float: left;
   width: 50%;
 }
 
-/* line 56, ../scss/_shop.scss */
+/* line 75, ../scss/_shop.scss */
 .shopMore {
   clear: both;
   display: block;
@@ -570,13 +896,15 @@ header {
   border: none;
   color: white;
 }
-/* line 64, ../scss/_shop.scss */
+/* line 83, ../scss/_shop.scss */
 .shopMore:hover {
   border: 2px solid #1b3a27;
 }
 
-/* line 64, ../scss/global.scss */
+/* line 63, ../scss/global.scss */
 footer {
   background: #101010;
   padding: 50px;
+  text-align: center;
+  color: white;
 }

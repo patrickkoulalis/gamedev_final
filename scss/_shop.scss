@@ -5,6 +5,7 @@
 	padding: 0 0 $padding 0;
 	& .container {
 		padding: $padding 0 $padding 0;
+		@include container(90%);
 	}
 	& .sectionTitle {
 		background: url(../images/sections/shop.jpeg);
@@ -12,6 +13,13 @@
 		background-position: bottom;
 		height: 100px;
 		line-height: 100px;
+	}
+
+	@include breakpoint(small) {
+		& .container {
+			padding: $padding;
+			@include container(100%);
+		}
 	}
 }
 
@@ -40,12 +48,23 @@
 	padding: 20px;
 	margin-top: 20px;
 	border: 2px solid #F9F9F9;
+	
 	&:nth-child(2n+0) {
 		@include span(6 at 7);
 	}
+	
 	& img {
 		max-width: 50%;
 	}
+
+	@include breakpoint(small) {
+		@include span(12);
+		
+		&:nth-child(2n+0) {
+			@include span(12);
+		}
+	}
+
 }
 
 .productInfo {

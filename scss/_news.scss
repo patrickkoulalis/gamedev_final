@@ -2,17 +2,14 @@
 	@extend %clearfix;
 	@include span(12);
 	//background: $purple;
+	
 	& .container{
-		max-width: 100% !important;
+		@include container(65%);
 	}
-	& a {
-		text-shadow: 1px 1px 0px #000;
-	}
-	& .posthero{
+	
+	& .news-hero{
 		background: $purple;
 		height: 450px;
-		background-size:cover;
-		background-position: bottom;
 		position: relative;
 		overflow: hidden;
 		& h2 {
@@ -20,6 +17,7 @@
 			left: 50%;
 			top: 50%;
 			transform: translateX(-50%) translateY(-50%);
+			text-shadow: 1px 1px 0px #000;
 		}
 		& img {
 			position: absolute;
@@ -29,43 +27,88 @@
 		}
 	}
 
-.read {
-	padding: 20px;
-	border: 3px solid $purple;
-	position: absolute;
-	left: 50%;
-	top: 55%;
-	transform: translateX(-50%);
-	color: white;
-}
-
-	& .post {
+	& .news-post-preview {
 		position: relative;
-		background: url(../images/news/thumbsup.jpg);
-		background-size: cover;
-		background-position: bottom;
 		height: 225px;
 		overflow: hidden;
-		@include span(4);
-
+		@include span(6);
 		&:nth-child(2n+0) {
-			@include span(4 at 5);
+			@include span(6 at 7);
 		}
-		&:nth-child(3n+0) {
-			@include span(4 at 9);
-		}
-
 		& img {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 100%;
 		}
-
-		& .newsTitle {
+		& .news-post-title {
 			position: absolute;
 			bottom: 1em;
 			left: 1em;
+			font-size: 1.5rem;
+		}
+	}
+
+	@include breakpoint(small) {
+		
+		& .container {
+			padding: 10px;
+			@include container(100%);
+		}
+		
+		& .news-post-preview {
+			height: 125px;
+			margin-bottom: 1%;
+			@include span(12);
+			&:nth-child(2n+0) {
+				@include span(12);
+			}
+			&:nth-child(3n+0) {
+				@include span(12);
+			}
+			& .news-post-title {
+				font-size: 1rem;
+			}
+		}
+		
+		& .news-hero{
+			background: $purple;
+			height: 250px;
+			position: relative;
+			overflow: hidden;
+			& h2 {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translateX(-50%) translateY(-50%);
+				text-shadow: 1px 1px 0px #000;
+			}
+			& img {height: inherit;}
+		}
+
+	}
+}
+
+.news-post-full {
+	@include span(12);
+	padding: $padding 0;
+	& img {
+		display: none;
+	}
+	& .news-post-title {
+		font-size: 3rem;
+		color: $purple;
+	}
+}
+
+.news-post-title {
+	& a {
+		background: darken($purple, 10%);
+		color: white;
+		padding: 5px; 
+		&:hover {
+			background: lighten($purple, 10%); 
+	    text-decoration: none;
 		}
 	}
 }

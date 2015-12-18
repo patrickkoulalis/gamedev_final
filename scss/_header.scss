@@ -2,6 +2,9 @@ header {
 	background: $darkGray;
 	@extend %clearfix;
 	//@include bleed-x(1000em 1000em);
+	& .container {
+		@include container(90%);
+	}
 }
 
 .logo {
@@ -13,9 +16,10 @@ header {
 	& ul {
 		@include span(11 at 2);
 		& li {
-			margin-left: $padding;
+			margin: 0 0 0 $padding;
 			float: left;
 			line-height: 4em;
+			list-style: none;
 			& a {
 				color: white;
 			}

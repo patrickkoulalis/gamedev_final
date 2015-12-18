@@ -5,7 +5,7 @@ $twitter: #4099FF;
 $green: adjust-hue($purple, 250%);
 $purple10: adjust-hue($purple, 20%);
 
-$padding: 10px;
+$padding: 20px;
 $susy: (
   flow: ltr,
   math: fluid,
@@ -48,18 +48,15 @@ $susy: (
 
 @mixin breakpoint($point) {
 	@if $point == large {
-		@media(max-width: 1500px) {@content;}
+		@media(max-width: 1200px) {@content;}
 	}
 	@if $point == medium {
-		@media(max-width: 1280px) {@content;}
+		@media(max-width: 980px) {@content;}
 	}
 	@if $point == small {
-		@media(max-width: 1000px) {@content;} 
+		@media(max-width: 800px) {@content;} 
 	}
 	@if $point == tiny {
-		@media(max-width: 640px) {@content;}
-	}
-	@if $point == mobile {
-		@media(max-width: 380px) {@content;}
+		@media(max-width: 360px) {@content;}
 	}
 }
