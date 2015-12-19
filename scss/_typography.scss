@@ -13,27 +13,34 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h1 {
     font-size: $fontsize * 3.5; 
     font-weight: normal;
+    @include breakpoint(small) {
+        font-size: $fontsize * 2.5; 
+    }
 }
 
 h2, .h2 {
     font-size: $fontsize * 3;
+    @include breakpoint(small) {
+        font-size: $fontsize * 2; 
+    }
 }
 
 h3, .h3 {
-    font-size: $fontsize * 2.5;
-    margin: 15px 0 0 0;
+    @include breakpoint(small) {
+        font-size: $fontsize * 1.5; 
+    }
 }
 
 h4, .h4 {
-    font-size: $fontsize * 2;
+    font-size: $fontsize * 1;
 }
 
 h5, .h5 {
-    font-size: $fontsize * 1.5;
+    font-size: $fontsize * .5;
 }
 
 h6, .h6 {
-    font-size: $fontsize * 1;
+    font-size: $fontsize * .5;
 }
 
 a {

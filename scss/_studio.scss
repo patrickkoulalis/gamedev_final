@@ -8,10 +8,22 @@
 		padding: 100px 0 300px 0;
 		@include container(60%);
 	}
-	& .sectionTitle {
+	& .section-title {
 		height: 100px;
 		line-height: 100px;
 		border: none;
+	}
+	@include breakpoint(medium) {
+		& .container {
+			padding: 50px 20px;
+			@include container(80%);
+		}
+	}
+	@include breakpoint(small) {
+		& .container {
+			padding: 50px 20px;
+			@include container(100%);
+		}
 	}
 }
 .studioOverlay {

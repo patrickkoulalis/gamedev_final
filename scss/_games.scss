@@ -1,12 +1,17 @@
 #games {
 	@extend %clearfix;
 	@include span(12);
-	& .sectionTitle {
+	& .section-title {
 		background: url(../images/sections/games.jpeg);
 		background-size: cover;
 		background-position: bottom;
 		height: 100px;
 		line-height: 100px;
+	}
+	@include breakpoint(small) {
+		& .game {
+			height: 200px;
+		}
 	}
 }
 
@@ -43,7 +48,7 @@
 	& a {
 		color: white;
 		&:hover{
-			color: darken($purple, 10%);
+			color: lighten($purple, 30%);
 		}
 	}
 }

@@ -7,7 +7,7 @@
 		padding: $padding 0 $padding 0;
 		@include container(90%);
 	}
-	& .sectionTitle {
+	& .section-title {
 		background: url(../images/sections/shop.jpeg);
 		background-size: cover;
 		background-position: bottom;
@@ -23,12 +23,12 @@
 	}
 }
 
-.colorSelect, .sizeSelect {
+.color-select, .size-select {
 	padding: $padding 0 0 0;
 }
 
 
-.colorPicker {
+.color-picker {
 	display: inline-block;
 	width: 15px;
 	height: 15px;
@@ -37,7 +37,7 @@
 	cursor: pointer;
 }
 
-.sizePicker {
+.size-picker {
 	display: inline-block;
 	margin-left: 10px;
 }
