@@ -24,7 +24,7 @@
 }
 
 .color-select, .size-select {
-	padding: $padding 0 0 0;
+	padding: $padding 0;
 }
 
 
@@ -80,7 +80,7 @@ span[class^="color-"] {
 			@include span(12);
 		}
 		& img {
-			@include span(6);
+			@include span(12);
 		}
 
 		& .product-info {

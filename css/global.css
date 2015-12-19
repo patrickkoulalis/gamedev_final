@@ -1014,7 +1014,7 @@ header h1 {
 
 /* line 26, ../scss/_shop.scss */
 .color-select, .size-select {
-  padding: 20px 0 0 0;
+  padding: 20px 0;
 }
 
 /* line 31, ../scss/_shop.scss */
@@ -1100,9 +1100,10 @@ span[class^="color-"] {
   }
   /* line 82, ../scss/_shop.scss */
   .product img {
-    width: 49.61832%;
+    width: 100%;
     float: left;
-    margin-right: 0.76336%;
+    margin-left: 0;
+    margin-right: 0;
   }
   /* line 86, ../scss/_shop.scss */
   .product .product-info {
