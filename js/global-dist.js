@@ -1,1 +1,1 @@
-$(document).ready(function(){var s=$(".news-post-preview").css("margin-right");$(".news-post-preview").css("margin-top",s),$("#news").css("padding-bottom",s)});
+$(document).ready(function(){var o=$(".news-post-preview").css("margin-right");$(".news-post-preview").css("margin-top",o),$("#news").css("padding-bottom",o)}),$(".mobile-nav-toggle").on("click",function(){$("body").toggleClass("mobile-nav")}),$(".mobile-nav-toggle").click(function(){$(this).toggleClass("mobile-nav-active")}),$("[class^=color-]").hover(function(){$(this).hide});

@@ -269,7 +269,7 @@ table {
 /* line 7, ../scss/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Alegreya Sans SC";
-  color: #555555;
+  color: #221b3a;
   margin: 0 0 5px 0;
   padding: 0;
 }
@@ -297,6 +297,10 @@ h2, .h2 {
   }
 }
 
+/* line 28, ../scss/_typography.scss */
+h3, .h3 {
+  margin-top: 10px;
+}
 @media (max-width: 800px) {
   /* line 28, ../scss/_typography.scss */
   h3, .h3 {
@@ -304,42 +308,42 @@ h2, .h2 {
   }
 }
 
-/* line 34, ../scss/_typography.scss */
+/* line 35, ../scss/_typography.scss */
 h4, .h4 {
   font-size: 12px;
 }
 
-/* line 38, ../scss/_typography.scss */
+/* line 39, ../scss/_typography.scss */
 h5, .h5 {
   font-size: 6px;
 }
 
-/* line 42, ../scss/_typography.scss */
+/* line 43, ../scss/_typography.scss */
 h6, .h6 {
   font-size: 6px;
 }
 
-/* line 46, ../scss/_typography.scss */
+/* line 47, ../scss/_typography.scss */
 a {
   color: #221b3a;
 }
 
-/* line 50, ../scss/_typography.scss */
+/* line 51, ../scss/_typography.scss */
 a:link {
   text-decoration: none;
 }
 
-/* line 54, ../scss/_typography.scss */
+/* line 55, ../scss/_typography.scss */
 a:visited {
   text-decoration: none;
 }
 
-/* line 62, ../scss/_typography.scss */
+/* line 63, ../scss/_typography.scss */
 a:active {
   text-decoration: none;
 }
 
-/* line 66, ../scss/_typography.scss */
+/* line 67, ../scss/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -347,7 +351,7 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 74, ../scss/_typography.scss */
+/* line 75, ../scss/_typography.scss */
 b,
 strong {
   font-weight: bold;
@@ -357,7 +361,7 @@ strong {
 /*
  * Addresses styling not present in Safari 5 and Chrome.
  */
-/* line 84, ../scss/_typography.scss */
+/* line 85, ../scss/_typography.scss */
 dfn {
   font-style: italic;
 }
@@ -365,7 +369,7 @@ dfn {
 /*
  * Addresses styling not present in IE 8/9.
  */
-/* line 92, ../scss/_typography.scss */
+/* line 93, ../scss/_typography.scss */
 mark {
   background: #ff0;
   color: black;
@@ -374,7 +378,7 @@ mark {
 /*
  * Corrects font family set oddly in Safari 5 and Chrome.
  */
-/* line 101, ../scss/_typography.scss */
+/* line 102, ../scss/_typography.scss */
 code,
 kbd,
 pre,
@@ -386,14 +390,14 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 113, ../scss/_typography.scss */
+/* line 114, ../scss/_typography.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 
-/* line 119, ../scss/_typography.scss */
+/* line 120, ../scss/_typography.scss */
 p {
   margin: 0 0 1rem 0;
 }
@@ -401,7 +405,7 @@ p {
 /*
  * Sets consistent quote types.
  */
-/* line 127, ../scss/_typography.scss */
+/* line 128, ../scss/_typography.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -409,7 +413,7 @@ q {
 /*
  * Addresses inconsistent and variable font size in all browsers.
  */
-/* line 135, ../scss/_typography.scss */
+/* line 136, ../scss/_typography.scss */
 small {
   font-size: 80%;
 }
@@ -417,7 +421,7 @@ small {
 /*
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 143, ../scss/_typography.scss */
+/* line 144, ../scss/_typography.scss */
 sub,
 sup {
   font-size: 75%;
@@ -426,23 +430,23 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 151, ../scss/_typography.scss */
+/* line 152, ../scss/_typography.scss */
 sup {
   top: -0.5rem;
 }
 
-/* line 155, ../scss/_typography.scss */
+/* line 156, ../scss/_typography.scss */
 sub {
   bottom: -0.25rem;
 }
 
-/* line 159, ../scss/_typography.scss */
+/* line 160, ../scss/_typography.scss */
 figcaption {
   padding: 5px 20px;
   margin: 0 0 4px 0;
 }
 
-/* line 164, ../scss/_typography.scss */
+/* line 165, ../scss/_typography.scss */
 time {
   font-weight: bold;
 }
@@ -473,43 +477,134 @@ button {
 header {
   background: #101010;
 }
-/* line 5, ../scss/_header.scss */
+/* line 7, ../scss/_header.scss */
 header .container {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 header .container:after {
   content: " ";
   display: block;
   clear: both;
 }
-
 /* line 10, ../scss/_header.scss */
+header h1 {
+  color: white;
+}
+@media (max-width: 800px) {
+  /* line 15, ../scss/_header.scss */
+  header ul {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 17, ../scss/_header.scss */
+  header ul li {
+    line-height: 4em;
+  }
+  /* line 19, ../scss/_header.scss */
+  header ul li a {
+    font-size: 1rem;
+  }
+  /* line 24, ../scss/_header.scss */
+  header .container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  header .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  /* line 27, ../scss/_header.scss */
+  header .top-nav {
+    display: none;
+  }
+  /* line 30, ../scss/_header.scss */
+  body.mobile-nav header .top-nav {
+    width: 100%;
+    display: block;
+  }
+  /* line 33, ../scss/_header.scss */
+  body.mobile-nav header .top-nav ul {
+    padding: 0;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 36, ../scss/_header.scss */
+  body.mobile-nav header .top-nav ul li {
+    margin: 0;
+    list-style: none;
+    float: none;
+    text-align: center;
+  }
+  /* line 41, ../scss/_header.scss */
+  body.mobile-nav header .top-nav ul li a {
+    color: white;
+  }
+  /* line 47, ../scss/_header.scss */
+  header .mobile-nav-toggle {
+    display: block;
+  }
+  /* line 50, ../scss/_header.scss */
+  header .logo {
+    text-align: center;
+    padding: 20px 20px 0 20px;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* line 58, ../scss/_header.scss */
 .logo {
   padding: 20px;
-  width: 7.63359%;
+  width: 16.03053%;
   float: left;
   margin-right: 0.76336%;
 }
 
-/* line 16, ../scss/_header.scss */
-.topnav ul {
-  width: 91.60305%;
+/* line 64, ../scss/_header.scss */
+.top-nav ul {
+  width: 83.20611%;
   float: right;
   margin-right: 0;
 }
-/* line 18, ../scss/_header.scss */
-.topnav ul li {
+/* line 66, ../scss/_header.scss */
+.top-nav ul li {
   margin: 0 0 0 20px;
   float: left;
   line-height: 4em;
   list-style: none;
 }
-/* line 23, ../scss/_header.scss */
-.topnav ul li a {
+/* line 71, ../scss/_header.scss */
+.top-nav ul li a {
   color: white;
+}
+/* line 73, ../scss/_header.scss */
+.top-nav ul li a:hover {
+  color: #5f4ca2;
+}
+
+/* line 81, ../scss/_header.scss */
+.mobile-nav-toggle {
+  display: none;
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  padding: 0 0 20px 0;
+  color: white;
+  cursor: pointer;
 }
 
 /* line 41, ../scss/global.scss */
@@ -517,7 +612,7 @@ header .container:after {
   border-bottom: solid 5px #0e0b17;
 }
 /* line 43, ../scss/global.scss */
-.section-title h2 {
+.section-title h1 {
   color: white;
   text-align: center;
   text-shadow: 1px 1px 0px #000;
@@ -538,11 +633,11 @@ header .container:after {
 }
 /* line 6, ../scss/_news.scss */
 #news .container {
-  max-width: 100%;
+  max-width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 #news .container:after {
   content: " ";
   display: block;
@@ -614,7 +709,7 @@ header .container:after {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   #news .container:after {
     content: " ";
     display: block;
@@ -646,7 +741,7 @@ header .container:after {
   /* line 75, ../scss/_news.scss */
   #news .news-hero {
     background: #221b3a;
-    height: 250px;
+    height: 350px;
     position: relative;
     overflow: hidden;
   }
@@ -670,7 +765,7 @@ header .container:after {
   float: left;
   margin-left: 0;
   margin-right: 0;
-  padding: 20px 0;
+  padding: 5% 10%;
 }
 /* line 96, ../scss/_news.scss */
 .news-post-full img {
@@ -682,16 +777,31 @@ header .container:after {
   color: #221b3a;
 }
 
-/* line 106, ../scss/_news.scss */
-.news-post-title a {
-  background: #0e0b17;
-  color: white;
+/* line 105, ../scss/_news.scss */
+.news-post-title {
+  background: #362b5d;
   padding: 5px;
+  color: white;
+  max-width: 90%;
 }
 /* line 110, ../scss/_news.scss */
-.news-post-title a:hover {
-  background: #362b5d;
+.news-post-title:hover {
+  background: #0e0b17;
   text-decoration: none;
+}
+/* line 114, ../scss/_news.scss */
+.news-post-title a {
+  color: white;
+}
+
+/* line 119, ../scss/_news.scss */
+.load-more-news {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  padding: 20px;
 }
 
 /* line 1, ../scss/_games.scss */
@@ -741,13 +851,13 @@ header .container:after {
 }
 
 /* line 36, ../scss/_games.scss */
-.gameOverlay {
+.game-overlay {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   height: 100%;
 }
 
 /* line 41, ../scss/_games.scss */
-.gameTitle {
+.game-title {
   background: #221b3a;
   display: inline-block;
   position: absolute;
@@ -756,11 +866,11 @@ header .container:after {
   border-bottom: solid 5px #0e0b17;
 }
 /* line 48, ../scss/_games.scss */
-.gameTitle a {
+.game-title a {
   color: white;
 }
 /* line 50, ../scss/_games.scss */
-.gameTitle a:hover {
+.game-title a:hover {
   color: #5f4ca2;
 }
 
@@ -776,12 +886,12 @@ header .container:after {
 }
 /* line 7, ../scss/_studio.scss */
 #studio .container {
-  padding: 100px 0 300px 0;
+  padding: 100px 0;
   max-width: 60%;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 #studio .container:after {
   content: " ";
   display: block;
@@ -793,15 +903,43 @@ header .container:after {
   line-height: 100px;
   border: none;
 }
+/* line 16, ../scss/_studio.scss */
+#studio img {
+  width: 32.82443%;
+  float: left;
+  margin-right: 0.76336%;
+}
+/* line 19, ../scss/_studio.scss */
+#studio img:nth-last-of-type(3) {
+  width: 32.82443%;
+  float: right;
+  margin-right: 0;
+}
+/* line 23, ../scss/_studio.scss */
+#studio h2 {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 29, ../scss/_studio.scss */
+#studio p {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
 @media (max-width: 980px) {
-  /* line 17, ../scss/_studio.scss */
+  /* line 34, ../scss/_studio.scss */
   #studio .container {
     padding: 50px 20px;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   #studio .container:after {
     content: " ";
     display: block;
@@ -809,14 +947,14 @@ header .container:after {
   }
 }
 @media (max-width: 800px) {
-  /* line 23, ../scss/_studio.scss */
+  /* line 40, ../scss/_studio.scss */
   #studio .container {
     padding: 50px 20px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   #studio .container:after {
     content: " ";
     display: block;
@@ -824,8 +962,8 @@ header .container:after {
   }
 }
 
-/* line 29, ../scss/_studio.scss */
-.studioOverlay {
+/* line 46, ../scss/_studio.scss */
+.studio-overlay {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 82%);
 }
 
@@ -844,7 +982,7 @@ header .container:after {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
 #shop .container:after {
   content: " ";
   display: block;
@@ -866,7 +1004,7 @@ header .container:after {
     margin-left: auto;
     margin-right: auto;
   }
-  /* line 12, ../../../../../Applications/Prepros.app/Contents/Resources/app.nw/gems/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
   #shop .container:after {
     content: " ";
     display: block;
@@ -880,77 +1018,148 @@ header .container:after {
 }
 
 /* line 31, ../scss/_shop.scss */
-.color-picker {
+span[class^="color-"] {
   display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: blue;
+  width: 25px;
+  height: 25px;
   margin-left: 2px;
   cursor: pointer;
 }
 
-/* line 40, ../scss/_shop.scss */
-.size-picker {
-  display: inline-block;
-  margin-left: 10px;
+/* line 39, ../scss/_shop.scss */
+.color-gray {
+  background: gray;
 }
 
-/* line 45, ../scss/_shop.scss */
+/* line 43, ../scss/_shop.scss */
+.color-red {
+  background: red;
+}
+
+/* line 47, ../scss/_shop.scss */
+.color-blue {
+  background: blue;
+}
+
+/* line 51, ../scss/_shop.scss */
+.color-purple {
+  background: #221b3a;
+}
+
+/* line 55, ../scss/_shop.scss */
+.size-select {
+  width: 60%;
+  padding: 20px;
+}
+
+/* line 60, ../scss/_shop.scss */
 .product {
   width: 49.61832%;
   float: left;
   margin-right: 0.76336%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background: white;
   padding: 20px;
   margin-top: 20px;
   border: 2px solid #F9F9F9;
 }
-/* line 52, ../scss/_shop.scss */
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.product:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+/* line 68, ../scss/_shop.scss */
 .product:nth-child(2n+0) {
   width: 49.61832%;
   float: right;
   margin-right: 0;
 }
-/* line 56, ../scss/_shop.scss */
+/* line 72, ../scss/_shop.scss */
 .product img {
-  max-width: 50%;
+  width: 32.82443%;
+  float: right;
+  margin-right: 0;
 }
 @media (max-width: 800px) {
-  /* line 45, ../scss/_shop.scss */
+  /* line 60, ../scss/_shop.scss */
   .product {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
   }
-  /* line 63, ../scss/_shop.scss */
+  /* line 79, ../scss/_shop.scss */
   .product:nth-child(2n+0) {
     width: 100%;
     float: left;
     margin-left: 0;
     margin-right: 0;
   }
+  /* line 82, ../scss/_shop.scss */
+  .product img {
+    width: 49.61832%;
+    float: left;
+    margin-right: 0.76336%;
+  }
+  /* line 86, ../scss/_shop.scss */
+  .product .product-info {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+  .product .product-info:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
 }
 
-/* line 70, ../scss/_shop.scss */
-.productInfo {
+/* line 94, ../scss/_shop.scss */
+.product-info {
+  width: 66.41221%;
   float: left;
-  width: 50%;
+  margin-right: 0.76336%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, C:/Program Files (x86)/Prepros/resources/app/ruby/ruby_gems/gems/susy-2.2.5/sass/susy/output/support/_clearfix.scss */
+.product-info:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
-/* line 75, ../scss/_shop.scss */
-.shopMore {
+/* line 99, ../scss/_shop.scss */
+.add-to-cart {
+  width: 66.41221%;
+  float: left;
+  margin-right: 0.76336%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* line 105, ../scss/_shop.scss */
+.shop-more {
   clear: both;
   display: block;
   margin: 0 auto;
-  background: #2c1b3a;
+  background: #362b5d;
   padding: 20px;
   border: none;
   color: white;
 }
-/* line 83, ../scss/_shop.scss */
-.shopMore:hover {
-  border: 2px solid #1b3a27;
+/* line 113, ../scss/_shop.scss */
+.shop-more:hover {
+  background: #0e0b17;
 }
 
 /* line 63, ../scss/global.scss */
@@ -959,4 +1168,22 @@ footer {
   padding: 50px;
   text-align: center;
   color: white;
+}
+/* line 69, ../scss/global.scss */
+footer .footer-links a {
+  color: white;
+}
+/* line 72, ../scss/global.scss */
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+/* line 75, ../scss/global.scss */
+footer .footer-links a:after {
+  content: "-";
+  display: inline-block;
+  margin-left: 5px;
+}
+/* line 80, ../scss/global.scss */
+footer .footer-links a:nth-child(6):after {
+  content: "";
 }

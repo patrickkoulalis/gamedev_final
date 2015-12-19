@@ -28,22 +28,38 @@
 }
 
 
-.color-picker {
+span[class^="color-"] {
 	display: inline-block;
-	width: 15px;
-	height: 15px;
-	background: blue;
+	width: 25px;
+	height: 25px;
 	margin-left: 2px;
 	cursor: pointer;
 }
 
-.size-picker {
-	display: inline-block;
-	margin-left: 10px;
+.color-gray {
+	background: gray;
+}
+
+.color-red {
+	background: red;
+}
+
+.color-blue {
+	background: blue;
+}
+
+.color-purple {
+	background: $purple;
+}
+
+.size-select {
+	width: 60%;
+	padding: $padding;
 }
 
 .product {
 	@include span(6);
+	@include container(100%);
 	background: white;
 	padding: 20px;
 	margin-top: 20px;
@@ -54,7 +70,7 @@
 	}
 	
 	& img {
-		max-width: 50%;
+		@include span(4 at 9);
 	}
 
 	@include breakpoint(small) {
@@ -63,24 +79,38 @@
 		&:nth-child(2n+0) {
 			@include span(12);
 		}
+		& img {
+			@include span(6);
+		}
+
+		& .product-info {
+			@include span(12);
+			@include container(100%);
+		}
 	}
 
 }
 
-.productInfo {
-	float: left;
-	width: 50%
+.product-info {
+	@include span(8);
+	@include container(100%);
 }
 
-.shopMore {
+.add-to-cart {
+	@include span(8);
+	padding: $padding;
+	margin-top: $padding;
+}
+
+.shop-more {
 	clear: both;
 	display: block;
 	margin: 0 auto;
-	background: $purple10;
+	background: lighten($purple, 10%);
 	padding: 20px;
 	border: none;
 	color: white;
 	&:hover {
-		border: 2px solid $green;
+		background: darken($purple, 10%);
 	}
 }

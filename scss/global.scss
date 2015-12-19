@@ -40,7 +40,7 @@ button {
 
 .section-title {
 	border-bottom: solid 5px darken($purple, 10%);
-	& h2 {
+	& h1 {
 		color: white;
 		text-align: center;
 		text-shadow: 1px 1px 0px #000;
@@ -66,4 +66,18 @@ footer {
 	padding: 50px;
 	text-align: center;
 	color: white;
+	& .footer-links a {
+		color: white;
+	}
+	& .footer-links a:hover {
+		text-decoration: underline;
+	}
+	& .footer-links a:after {
+		content: "-";
+		display: inline-block;
+		margin-left: 5px;
+	}
+	& .footer-links a:nth-child(6):after{
+		content: "";
+	}	
 }

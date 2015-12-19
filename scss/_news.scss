@@ -4,7 +4,7 @@
 	//background: $purple;
 	
 	& .container{
-		@include container(100%);
+		@include container(75%);
 	}
 	
 	& .news-hero{
@@ -74,7 +74,7 @@
 		
 		& .news-hero{
 			background: $purple;
-			height: 250px;
+			height: 350px;
 			position: relative;
 			overflow: hidden;
 			& h2 {
@@ -92,7 +92,7 @@
 
 .news-post-full {
 	@include span(12);
-	padding: $padding 0;
+	padding: 5% 10%;
 	& img {
 		display: none;
 	}
@@ -103,13 +103,21 @@
 }
 
 .news-post-title {
-	& a {
-		background: darken($purple, 10%);
-		color: white;
-		padding: 5px; 
-		&:hover {
-			background: lighten($purple, 10%); 
+	background: lighten($purple, 10%);
+	padding: 5px;
+	color: white;
+	max-width: 90%;
+	&:hover {
+			background: darken($purple, 10%); 
 	    text-decoration: none;
 		}
+	& a {
+		color: white;
 	}
+}
+
+.load-more-news {
+	@include span(12);
+	text-align: center;
+	padding: $padding;
 }

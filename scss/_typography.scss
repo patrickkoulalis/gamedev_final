@@ -6,7 +6,7 @@ $headingfont: 'Alegreya Sans SC';
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $headingfont;
-    color: #555555;
+    color: $purple;
     margin: 0 0 5px 0;
     padding: 0;
 }
@@ -26,6 +26,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
+    margin-top: 10px;
     @include breakpoint(small) {
         font-size: $fontsize * 1.5; 
     }

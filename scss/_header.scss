@@ -1,20 +1,68 @@
 header {
 	background: $darkGray;
 	@extend %clearfix;
-	//@include bleed-x(1000em 1000em);
+	//width: 100%;
+	//z-index: 9999;
+	//position: fixed;
 	& .container {
 		@include container(90%);
+	}
+	& h1 {
+		color: white;
+	}
+	
+	@include breakpoint(small) {
+		& ul {
+			@include span(12);
+			& li {
+				line-height: 4em;
+				& a {
+					font-size: 1rem;
+				}
+			}
+		}
+		& .container {
+			@include container(100%);
+		}
+		& .top-nav {
+			display: none;
+		}
+		body.mobile-nav & .top-nav {
+			width: 100%;
+			display: block;
+			& ul {
+				padding: 0;
+				@include span(12);
+				& li {
+					margin: 0;
+					list-style: none;
+					float: none;
+					text-align: center;
+					& a {
+						color: white;
+					}
+				}
+			}		  
+		}		
+		& .mobile-nav-toggle {
+			display: block;
+		}
+		& .logo {
+			text-align: center;
+			padding: $padding $padding 0 $padding;
+			@include span(12);
+		}
 	}
 }
 
 .logo {
 	padding: $padding;
-	@include span(1);
+	@include span(2);
 }
 
-.topnav {
+.top-nav {
 	& ul {
-		@include span(11 at 2);
+		@include span(10 at 3);
 		& li {
 			margin: 0 0 0 $padding;
 			float: left;
@@ -22,7 +70,20 @@ header {
 			list-style: none;
 			& a {
 				color: white;
+				&:hover {
+					color: lighten($purple, 30%);
+				}
 			}
 		}
 	}
 }
+
+.mobile-nav-toggle {
+	display: none;
+	@include span(12);
+	text-align: center;
+	padding: 0 0 $padding 0;
+	color: white;
+	cursor: pointer;
+}
+ 
