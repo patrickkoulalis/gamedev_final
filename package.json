@@ -1,0 +1,36 @@
+{
+  "name": "gamedev_final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickkoulalis/gamedev_final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrickkoulalis/gamedev_final/issues"
+  },
+  "homepage": "https://github.com/patrickkoulalis/gamedev_final#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.14.0",
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
