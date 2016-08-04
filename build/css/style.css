@@ -1,0 +1,4 @@
+.studio-overlay {
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 82%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 82%);
+}
