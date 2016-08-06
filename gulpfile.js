@@ -107,5 +107,6 @@ gulp.task('scripts', function() {
 // run 'scripts' task first, then watch for future changes
 gulp.task('default', ['images','styles','scripts','browser-sync'], function() {
   gulp.watch('css/**/*', ['styles']); // gulp watch for stylus changes
+  gulp.watch('*.html', browserSync.reload);
   return buildScript('main.js', true); // browserify watch for JS changes
 });
