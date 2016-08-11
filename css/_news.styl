@@ -1,0 +1,69 @@
+#news
+	width: 100%
+	
+	& .container
+		max-width: 75%
+		margin: 0 auto	
+	
+	& .container > article
+		height: 225px
+		width: 33%
+		position: relative
+		
+	& .container > article:nth-child(1)
+		height: 500px
+		width: 100%
+
+	@include breakpoint(small)
+		
+		& .container
+			padding: 10px
+			@include container(100%)
+		
+		& .news-post-preview
+			height: 225px
+			margin-bottom: 1%
+			@include span(12)
+			&:nth-child(2n+0) 
+				@include span(12)
+			&:nth-child(3n+0) 
+				@include span(12)
+		
+		& .news-hero
+			background: purple
+			height: 350px
+			position: relative
+			overflow: hidden
+			& h2 
+				position: absolute
+				left: 50%
+				top: 50%
+				transform: translateX(-50%) translateY(-50%)
+				text-shadow: 1px 1px 0px #000
+			& img
+				height: inherit
+
+.news-post-full
+	@include span(12)
+	padding: 5% 10%
+	& img
+		display: none
+	& .news-post-title
+		font-size: 3rem
+		color: $purple
+
+.news-post-title
+	background: lighten(purple, 10%)
+	padding: 5px
+	color: white
+	max-width: 90%
+	&:hover
+			background: darken(purple, 10%)
+	    text-decoration: none
+	& a
+		color: white
+
+.load-more-news
+	@include span(12)
+	text-align: center
+	padding: $padding

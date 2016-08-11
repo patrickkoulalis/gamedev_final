@@ -1,7 +1,6 @@
 #studio
-	@extend %clearfix
 	@include span(12)
-	background: url(../images/sections/studio.jpeg)
+	background: url(/images/sections/studio.jpeg)
 	background-size: cover
 	position: relative;
 	& .container
@@ -15,33 +14,26 @@
 	& img 
 		@include span(4)
 	
-	& img:nth-last-of-type(3) {
+	& img:nth-last-of-type(3)
 		@include span(4 at 9);
-	}
 
-	& h2 {
+	& h2
 		@include span(12);
 		text-align: center;
 		margin-top: $padding;
-	}
 
-	& p {
+	& p
 		@include span(12);
-	}
 
-	@include breakpoint(medium) {
-		& .container {
+	@include breakpoint(medium) 
+		& .container
 			padding: 50px 20px;
 			@include container(80%);
-		}
-	}
-	@include breakpoint(small) {
-		& .container {
+			
+	@include breakpoint(small)
+		& .container
 			padding: 50px 20px;
 			@include container(100%);
-		}
-	}
-}
-.studio-overlay {
+
+.studio-overlay 
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 82%);
-}
