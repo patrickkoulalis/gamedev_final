@@ -1,3 +1,113 @@
+#news {
+  width: 100%;
+}
+#news .container {
+  max-width: 75%;
+  margin: 0 auto;
+}
+#news .container > article {
+  height: 225px;
+  width: 33%;
+  position: relative;
+}
+#news .container > article:nth-child(1) {
+  height: 500px;
+  width: 100%;
+}
+@include breakpoint(small) {
+  #news .container {
+    padding: 10px;
+  }
+  @include container(100%);
+  #news .news-post-preview {
+    height: 225px;
+    margin-bottom: 1%;
+  }
+  @include span(12);
+  @include span(12);
+  @include span(12);
+  #news .news-hero {
+    background: #800080;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+  #news .news-hero h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    text-shadow: 1px 1px 0px #000;
+  }
+  #news .news-hero img {
+    height: inherit;
+  }
+}
+.news-post-full {
+  padding: 5% 10%;
+}
+@include span(12);
+.news-post-full img {
+  display: none;
+}
+.news-post-full .news-post-title {
+  font-size: 3rem;
+  color: $purple;
+}
+.news-post-title {
+  background: #a600a6;
+  padding: 5px;
+  color: #fff;
+  max-width: 90%;
+  text-decoration: none;
+}
+.news-post-title:hover {
+  background: #730073;
+}
+.news-post-title a {
+  color: #fff;
+}
+.load-more-news {
+  text-align: center;
+  padding: $padding;
+}
+@include span(12);
+#studio {
+  background: url("/images/sections/studio.jpeg");
+  background-size: cover;
+  position: relative;
+}
+@include span(12);
+#studio .container {
+  padding: 100px 0;
+}
+@include container(60%);
+#studio .section-title {
+  height: 100px;
+  line-height: 100px;
+  border: none;
+}
+@include span(4);
+@include span(4 at 9);
+#studio h2 {
+  text-align: center;
+  margin-top: $padding;
+}
+@include span(12);
+@include span(12);
+@include breakpoint(medium) {
+  #studio .container {
+    padding: 50px 20px;
+  }
+  @include container(80%);
+}
+@include breakpoint(small) {
+  #studio .container {
+    padding: 50px 20px;
+  }
+  @include container(100%);
+}
 .studio-overlay {
   background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, #fff 82%);
   background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, #fff 82%);
